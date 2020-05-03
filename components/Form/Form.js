@@ -48,74 +48,52 @@ export default function Form() {
       <LazyLoad height={200} offset={280}>
         <StyledForm>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <input
-              type='text'
-              placeholder='Nome'
-              name='name'
-              label='nome'
-              ref={register({ required: true, maxLength: 80 })}
-            />
-            <span>{errors.name && 'Por favor informar seu nome'}</span>
+            <label htmlFor='nome'>
+              <input
+                type='text'
+                placeholder='Nome'
+                name='nome'
+                ref={register({ required: true, maxLength: 80 })}
+              />
+            </label>
+            <span>{errors.nome && 'Por favor informar seu nome'}</span>
 
-            <input
-              type='email'
-              placeholder='Email'
-              name='email'
-              label='email'
-              ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-            />
+            <label htmlFor='email'>
+              <input
+                type='email'
+                placeholder='Email'
+                name='email'
+                ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+              />
+            </label>
             <span>{errors.email && 'Por favor informar seu email'}</span>
 
-            <h3>Já possui um design?</h3>
-            <select
-              name='design'
-              label='Já possui um design?'
-              ref={register({ required: true })}
-            >
-              <option value='Sim' label='sim'>
-                Sim
-              </option>
-              <option value='Não' label='não'>
-                Não
-              </option>
-            </select>
+            <label>
+              Já possui um design?
+              <select name='design' ref={register({ required: true })}>
+                <option value='Sim'>Sim</option>
+                <option value='Não'>Não</option>
+              </select>
+            </label>
 
-            <h3>Número de páginas do projeto</h3>
-            <select
-              name='pages'
-              label='Número de páginas do projeto'
-              ref={register({ required: true })}
-            >
-              <option value='01' label='Uma'>
-                01
-              </option>
-              <option value='02' label='Duas'>
-                02
-              </option>
-              <option value='03' label='Três'>
-                03
-              </option>
-              <option value='04' label='Quatro'>
-                04
-              </option>
-              <option value='05' label='Cinco'>
-                05
-              </option>
-              <option value='06' label='Seis'>
-                06
-              </option>
-              <option value='+07' label='Sete'>
-                +07
-              </option>
-            </select>
+            <label>
+              Número de páginas do projeto
+              <select name='pages' ref={register({ required: true })}>
+                <option value='01'>01</option>
+                <option value='02'>02</option>
+                <option value='03'>03</option>
+                <option value='04'>04</option>
+                <option value='05'>05</option>
+                <option value='06'>06</option>
+                <option value='+07'>+07</option>
+              </select>
+            </label>
 
-            <h3>Mensagem</h3>
-            <textarea
-              name='message'
-              label='Deixe sua mensagem para mim'
-              ref={register({ required: true })}
-            />
-            <span>{errors.message && 'Por favor detalhar seu projeto'}</span>
+            <label>
+              Mensagem
+              <textarea name='mensagem' ref={register({ required: true })} />
+            </label>
+            <span>{errors.mensagem && 'Por favor detalhar seu projeto'}</span>
 
             <button
               type='submit'

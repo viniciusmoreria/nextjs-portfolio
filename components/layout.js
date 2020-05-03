@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NextSeo } from 'next-seo';
+import { Link } from 'react-scroll';
 
-import { Menu, Burger } from './Menu';
 import { Nav, Navbar, StyledFooter } from './style';
 
-export default function Layout({ children, title = '' }) {
-  const [open, setOpen] = useState(false);
-
+export default function Layout({ children }) {
   return (
     <>
       <NextSeo
-        title={title}
-        titleTemplate='vinícius | %s'
+        title='vinícius | front-end web developer'
         description='Design e desenvolvimento de produtos digitais.'
         canonical='https://viniciusmoreeira.now.sh/'
         hrefLang='pt-BR'
@@ -41,11 +38,19 @@ export default function Layout({ children, title = '' }) {
           <a className='logo' href='/'>
             vinícius
           </a>
-          <Burger open={open} setOpen={setOpen} />
+          <div className='links'>
+            <Link to='about' smooth>
+              sobre mim
+            </Link>
+            <Link to='projects' smooth>
+              projetos
+            </Link>
+            <Link to='form' smooth>
+              contato
+            </Link>
+          </div>
         </Navbar>
       </Nav>
-
-      <Menu open={open} setOpen={setOpen} />
 
       {children}
 

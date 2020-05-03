@@ -24,6 +24,24 @@ export const Navbar = styled.nav`
     color: ${({ theme }) => theme.primaryDark};
     text-decoration: none;
   }
+
+  .links {
+    a {
+      font-size: 1.6rem;
+      color: ${({ theme }) => theme.primaryDark};
+      text-decoration: none;
+      transition: all 0.3s ease-in;
+      cursor: pointer;
+
+      :not(:last-child) {
+        margin-right: 15px;
+      }
+
+      &:hover {
+        color: #999;
+      }
+    }
+  }
 `;
 
 export const StyledFooter = styled.footer`

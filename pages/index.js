@@ -1,10 +1,11 @@
-import { Layout, Header, Projects, Featured, Form } from '../components';
+import { Layout, Header, About, Projects, Featured, Form } from '../components';
 
 export default function Home() {
   return (
     <>
-      <Layout title='front-end web designer'>
+      <Layout>
         <Header />
+        <About />
         <Projects />
         <Featured />
         <Form />

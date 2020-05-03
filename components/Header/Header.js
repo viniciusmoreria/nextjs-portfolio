@@ -50,7 +50,7 @@ function Header() {
 
         <div className='scroll'>
           <UseAnimations animationKey='arrowDown' size={22} />
-          <Link to='projects' smooth>
+          <Link to='about' smooth>
             <span>descer</span>
           </Link>
         </div>

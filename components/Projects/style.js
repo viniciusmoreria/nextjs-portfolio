@@ -6,7 +6,6 @@ export const StyledProjects = styled.div`
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   height: 100vh;
-  padding-top: 7%;
   position: relative;
 
   ${between('ss', 'sm')} {
