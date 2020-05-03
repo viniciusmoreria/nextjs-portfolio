@@ -54,13 +54,6 @@ This project was developed with the following technologies:
    yarn dev
    ```
 
-<!-- 4. How to fix your contact form
-
-   ```bash
-   I'm using Sendgrid, 
-   ``` -->
-
-
 
 ## License
 
