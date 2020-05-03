@@ -45,13 +45,14 @@ export default function Form() {
         </div>
       </div>
 
-      <LazyLoad height={200} offset={250}>
+      <LazyLoad height={200} offset={280}>
         <StyledForm>
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               type='text'
               placeholder='Nome'
               name='name'
+              label='nome'
               ref={register({ required: true, maxLength: 80 })}
             />
             <span>{errors.name && 'Por favor informar seu nome'}</span>
@@ -60,29 +61,60 @@ export default function Form() {
               type='email'
               placeholder='Email'
               name='email'
+              label='email'
               ref={register({ required: true, pattern: /^\S+@\S+$/i })}
             />
             <span>{errors.email && 'Por favor informar seu email'}</span>
 
             <h3>Já possui um design?</h3>
-            <select name='design' ref={register({ required: true })}>
-              <option value='Sim'>Sim</option>
-              <option value='Não'>Não</option>
+            <select
+              name='design'
+              label='Já possui um design?'
+              ref={register({ required: true })}
+            >
+              <option value='Sim' label='sim'>
+                Sim
+              </option>
+              <option value='Não' label='não'>
+                Não
+              </option>
             </select>
 
             <h3>Número de páginas do projeto</h3>
-            <select name='pages' ref={register({ required: true })}>
-              <option value='01'>01</option>
-              <option value='02'>02</option>
-              <option value='03'>03</option>
-              <option value='04'>04</option>
-              <option value='05'>05</option>
-              <option value='06'>06</option>
-              <option value='+07'>+07</option>
+            <select
+              name='pages'
+              label='Número de páginas do projeto'
+              ref={register({ required: true })}
+            >
+              <option value='01' label='Uma'>
+                01
+              </option>
+              <option value='02' label='Duas'>
+                02
+              </option>
+              <option value='03' label='Três'>
+                03
+              </option>
+              <option value='04' label='Quatro'>
+                04
+              </option>
+              <option value='05' label='Cinco'>
+                05
+              </option>
+              <option value='06' label='Seis'>
+                06
+              </option>
+              <option value='+07' label='Sete'>
+                +07
+              </option>
             </select>
 
             <h3>Mensagem</h3>
-            <textarea name='message' ref={register({ required: true })} />
+            <textarea
+              name='message'
+              label='Deixe sua mensagem para mim'
+              ref={register({ required: true })}
+            />
             <span>{errors.message && 'Por favor detalhar seu projeto'}</span>
 
             <button

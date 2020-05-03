@@ -6,7 +6,7 @@ export const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 
   ${between('ss', 'sm')} {

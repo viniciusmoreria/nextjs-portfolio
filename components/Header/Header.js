@@ -1,8 +1,8 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
-import { Link } from 'react-scroll';
 import UseAnimations from 'react-useanimations';
 import Lottie from './Lottie';
+import { Fade } from 'react-awesome-reveal';
+import { Link } from 'react-scroll';
 
 import { Wrapper, Hero, Icons } from './style';
 
@@ -33,7 +33,7 @@ function Header() {
           <a
             target='_blank'
             rel='noopener noreferrer'
-            aria-label='Gitub Link'
+            aria-label='Github Link'
             href='https://github.com/viniciusmoreeira'
           >
             <UseAnimations animationKey='github' size={26} />

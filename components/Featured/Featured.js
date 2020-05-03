@@ -6,8 +6,11 @@ import { StyledProject } from './style';
 const Featured = () => {
   return (
     <StyledProject>
-      <LazyLoad height={200} offset={250}>
-        <img src='http://placehold.jp/720x540.png' alt='Featured Project' />
+      <LazyLoad height={200} offset={280}>
+        <img
+          src='https://cdn.dribbble.com/users/1553101/screenshots/4585382/dribbble_post.png'
+          alt='Featured Project'
+        />
       </LazyLoad>
       <div className='right-text'>
         <div>

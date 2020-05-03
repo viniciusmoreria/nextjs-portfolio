@@ -6,7 +6,7 @@ export const StyledProject = styled.nav`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: ${({ theme }) => theme.primaryDark};
   position: relative;
 
@@ -20,7 +20,7 @@ export const StyledProject = styled.nav`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center top;
     user-select: none;
 
     ${between('ss', 'sm')} {

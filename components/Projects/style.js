@@ -5,7 +5,7 @@ export const StyledProjects = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding-top: 7%;
   position: relative;
 
@@ -59,7 +59,11 @@ export const StyledProjects = styled.div`
 
     img {
       object-fit: cover;
-      object-position: center center;
+      object-position: center top;
+
+      ${between('ss', 'sm')} {
+        height: 50vh;
+      }
     }
 
     .arrows {

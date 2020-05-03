@@ -13,27 +13,19 @@ export default function Layout({ children, title = '' }) {
         title={title}
         titleTemplate='vinícius | %s'
         description='Design e desenvolvimento de produtos digitais.'
-        canonical='https://test-two-dusky.now.sh'
+        canonical='https://viniciusmoreeira.now.sh/'
         hrefLang='pt-BR'
         openGraph={{
-          url: 'https://test-two-dusky.now.sh',
+          url: 'https://viniciusmoreeira.now.sh/',
           title: 'vinícius | front-end web developer',
           description: 'Design e desenvolvimento de produtos digitais.',
           images: [
             {
-              url: 'https://i.imgur.com/dL8KN3l.jpg',
+              url: 'https://i.imgur.com/CDmlNOF.png',
               width: 800,
               height: 600,
-              alt: 'Website',
+              alt: 'Website Logo',
             },
-            {
-              url: 'https://i.imgur.com/dL8KN3l.jpg',
-              width: 900,
-              height: 800,
-              alt: 'Og Image Alt Second',
-            },
-            { url: 'https://i.imgur.com/dL8KN3l.jpg' },
-            { url: 'https://i.imgur.com/dL8KN3l.jpg' },
           ],
           site_name: 'vinícius | front-end web developer',
         }}
@@ -62,6 +54,7 @@ export default function Layout({ children, title = '' }) {
           <a
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Github Link'
             href='https://github.com/viniciusmoreeira'
           >
             github
@@ -69,6 +62,7 @@ export default function Layout({ children, title = '' }) {
           <a
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Linkedin Link'
             href='https://www.linkedin.com/in/viniciusmoreeira/'
           >
             linkedin
@@ -76,6 +70,7 @@ export default function Layout({ children, title = '' }) {
           <a
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Dribbble Link'
             href='https://dribbble.com/viniciusmoreira'
           >
             dribbble
@@ -83,6 +78,7 @@ export default function Layout({ children, title = '' }) {
           <a
             target='_blank'
             rel='noopener noreferrer'
+            aria-label='Behance Link'
             href='https://www.behance.net/viniciusmoreeira'
           >
             behance

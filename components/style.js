@@ -9,7 +9,7 @@ export const Nav = styled.div`
   z-index: 999;
 `;
 
-export const Navbar = styled.div`
+export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +26,7 @@ export const Navbar = styled.div`
   }
 `;
 
-export const StyledFooter = styled.nav`
+export const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;

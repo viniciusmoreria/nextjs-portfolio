@@ -5,10 +5,11 @@ import Image from './image';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const images = [
-  'http://placehold.jp/720x540.png',
-  'http://placehold.jp/720x540.png',
-  'http://placehold.jp/720x540.png',
+  'https://i.imgur.com/rAm5wCX.png',
+  'https://i.imgur.com/dVxHaQ9.jpg',
+  'https://i.imgur.com/wWUrFdE.png',
 ];
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },

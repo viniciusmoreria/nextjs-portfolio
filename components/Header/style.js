@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   background: ${({ theme }) => theme.background};
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
 `;
 

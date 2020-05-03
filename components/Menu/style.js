@@ -34,7 +34,7 @@ export const StyledBurger = styled.button`
   }
 `;
 
-export const StyledMenu = styled.nav`
+export const StyledMenu = styled.menu`
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: ${({ theme }) => theme.maxWidth};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, func } from 'prop-types';
 
-import { StyledMenu, StyledBurger } from './style';
+import { StyledBurger, StyledMenu } from './style';
 
 export const Burger = ({ open, setOpen }) => {
   function lockScroll() {
