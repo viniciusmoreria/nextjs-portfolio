@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FaArrowUp } from 'react-icons/fa';
 import { Link } from 'react-scroll';
+import { Fade } from 'react-awesome-reveal';
 import LazyLoad from 'react-lazyload';
 
 import { Container, StyledForm } from './style';
@@ -39,10 +40,10 @@ export default function Form() {
   return (
     <Container id='form'>
       <div className='left-text'>
-        <div>
+        <Fade cascade>
           <h2>Vamos começar um projeto juntos?</h2>
           <p>Me conte sobre seu projeto e eu entrarei em contato em seguida.</p>
-        </div>
+        </Fade>
       </div>
 
       <LazyLoad height={200} offset={280}>
@@ -52,11 +53,11 @@ export default function Form() {
               <input
                 type='text'
                 placeholder='Nome'
-                name='nome'
+                name='name'
                 ref={register({ required: true, maxLength: 80 })}
               />
             </label>
-            <span>{errors.nome && 'Por favor informar seu nome'}</span>
+            <span>{errors.name && 'Por favor informar seu nome'}</span>
 
             <label htmlFor='email'>
               <input
@@ -91,9 +92,9 @@ export default function Form() {
 
             <label>
               Mensagem
-              <textarea name='mensagem' ref={register({ required: true })} />
+              <textarea name='message' ref={register({ required: true })} />
             </label>
-            <span>{errors.mensagem && 'Por favor detalhar seu projeto'}</span>
+            <span>{errors.message && 'Por favor detalhar seu projeto'}</span>
 
             <button
               type='submit'

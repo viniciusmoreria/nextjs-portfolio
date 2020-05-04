@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { between, down } from 'styled-breakpoints';
 
-export const StyledProject = styled.nav`
+export const StyledProject = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -13,7 +13,6 @@ export const StyledProject = styled.nav`
   ${between('ss', 'sm')} {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    text-align: center;
   }
 
   img {
@@ -50,12 +49,14 @@ export const StyledProject = styled.nav`
         font-size: 2.5rem;
         color: ${({ theme }) => theme.primaryLight};
         width: 100%;
+        margin-bottom: 2.2rem;
       }
 
       p {
         font-size: 1.7rem;
         color: #777777;
-        margin-top: 1rem;
+        text-align: justify;
+        text-justify: inter-word;
       }
     }
   }

@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 import { between, down } from 'styled-breakpoints';
 
-export const StyledProject = styled.nav`
+export const StyledAbout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 7%;
   background-color: ${({ theme }) => theme.primaryLight};
   position: relative;
 
   ${between('ss', 'sm')} {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    text-align: center;
   }
 
   .right-text {
@@ -22,9 +22,6 @@ export const StyledProject = styled.nav`
     justify-content: center;
     align-items: center;
     margin: auto;
-    height: 100%;
-    width: 100%;
-    background-color: ${({ theme }) => theme.primaryDark};
 
     ${between('ss', 'sm')} {
       height: 50vh;
@@ -39,20 +36,21 @@ export const StyledProject = styled.nav`
 
       h2 {
         font-size: 2.5rem;
-        color: ${({ theme }) => theme.primaryLight};
+        color: ${({ theme }) => theme.primaryDark};
         width: 100%;
+        margin-bottom: 2.2rem;
       }
 
       p {
         font-size: 1.7rem;
-        color: #777777;
-        margin-top: 2rem;
+        color: #363636;
+        text-align: justify;
+        text-justify: inter-word;
       }
 
       a {
-        margin-left: 5px;
+        color: ${({ theme }) => theme.accent};
         text-decoration: none;
-        color: ${({ theme }) => theme.primaryLight};
         cursor: pointer;
       }
     }
@@ -62,7 +60,7 @@ export const StyledProject = styled.nav`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: center bottom;
     user-select: none;
 
     ${between('ss', 'sm')} {

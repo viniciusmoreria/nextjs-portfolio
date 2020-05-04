@@ -11,8 +11,10 @@ export const StyledProjects = styled.div`
   ${between('ss', 'sm')} {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    text-align: center;
-    padding-top: 5%;
+
+    div :nth-of-type(1) {
+      order: 2;
+    }
   }
 
   .left-text {
@@ -39,12 +41,14 @@ export const StyledProjects = styled.div`
         font-size: 2.5rem;
         color: ${({ theme }) => theme.primaryDark};
         width: 100%;
+        margin: 1rem 0 2.2rem;
       }
 
       p {
         font-size: 1.7rem;
         color: #363636;
-        margin-top: 1rem;
+        text-align: justify;
+        text-justify: inter-word;
       }
     }
   }
@@ -79,6 +83,7 @@ export const StyledProjects = styled.div`
       ${between('ss', 'sm')} {
         left: unset;
         right: 0;
+        bottom: 40%;
       }
 
       svg {
@@ -87,10 +92,6 @@ export const StyledProjects = styled.div`
         width: 75px;
         cursor: pointer;
         transition: all 0.3s ease-in;
-
-        &:hover {
-          background-color: #111;
-        }
 
         ${between('ss', 'sm')} {
           left: unset;

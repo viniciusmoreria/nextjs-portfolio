@@ -1,5 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
+import { Fade } from 'react-awesome-reveal';
 
 import { StyledProject } from './style';
 
@@ -13,13 +14,13 @@ const Featured = () => {
         />
       </LazyLoad>
       <div className='right-text'>
-        <div>
+        <Fade cascade>
           <h2>Desenvolver o que você precisa.</h2>
           <p>
             Como desenvolvedor, sei como criar seu site para rodar em
             dispositivos usando as tecnologias mais recentes disponíveis.
           </p>
-        </div>
+        </Fade>
       </div>
     </StyledProject>
   );

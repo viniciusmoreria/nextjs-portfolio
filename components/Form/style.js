@@ -12,7 +12,6 @@ export const Container = styled.div`
   ${between('ss', 'sm')} {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    text-align: center;
     min-height: 115%;
   }
 
@@ -39,12 +38,14 @@ export const Container = styled.div`
         font-size: 2.5rem;
         color: ${({ theme }) => theme.primaryDark};
         width: 100%;
+        margin-bottom: 2.2rem;
       }
 
       p {
         font-size: 1.7rem;
         color: #363636;
-        margin-top: 1rem;
+        text-align: justify;
+        text-justify: inter-word;
       }
     }
   }
@@ -76,7 +77,6 @@ export const StyledForm = styled.div`
     }
 
     ${between('ss', 'sm')} {
-      height: 100%;
       width: 70%;
     }
 
