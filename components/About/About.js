@@ -10,7 +10,7 @@ const About = () => {
       <LazyLoad height={200} offset={280}>
         <img
           src='https://images.unsplash.com/photo-1528372444006-1bfc81acab02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80'
-          alt='Work Desktop Picture'
+          alt='Imagem de uma mesa de trabalho'
         />
       </LazyLoad>
       <div className='right-text'>
@@ -19,17 +19,16 @@ const About = () => {
 
           <p>
             Meu nome é Vinícius. Gosto de criar coisas que vivem na internet,
-            sejam sites ou aplicativos, com foco em design responsivo. Você
-            consegue baixar meu currículo clicando{' '}
+            sejam sites ou aplicativos, com foco em design responsivo.
+          </p>
+          <p>
             <a
               target='_blank'
               rel='noopener noreferrer'
-              aria-label='Meu Currículo'
               href='https://viniciusmoreeira.now.sh/resume.pdf'
             >
-              aqui
+              Visualizar meu currículo.
             </a>
-            .
           </p>
         </Fade>
       </div>

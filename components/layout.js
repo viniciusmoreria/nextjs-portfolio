@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NextSeo } from 'next-seo';
-import { Link } from 'react-scroll';
-
+import { Menu, Burger } from './Menu';
 import { Nav, Navbar, StyledFooter } from './style';
 
 export default function Layout({ children }) {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <NextSeo
@@ -38,19 +39,11 @@ export default function Layout({ children }) {
           <a className='logo' href='/'>
             vinícius
           </a>
-          <div className='links'>
-            <Link to='about' smooth>
-              sobre mim
-            </Link>
-            <Link to='projects' smooth>
-              projetos
-            </Link>
-            <Link to='form' smooth>
-              contato
-            </Link>
-          </div>
+          <Burger open={open} setOpen={setOpen} />
         </Navbar>
       </Nav>
+
+      <Menu open={open} setOpen={setOpen} />
 
       {children}
 

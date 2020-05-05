@@ -14,6 +14,7 @@ export const StyledAbout = styled.div`
   ${between('ss', 'sm')} {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    padding-top: 0;
   }
 
   .right-text {
@@ -46,6 +47,7 @@ export const StyledAbout = styled.div`
         color: #363636;
         text-align: justify;
         text-justify: inter-word;
+        margin-bottom: 1.5rem;
       }
 
       a {
