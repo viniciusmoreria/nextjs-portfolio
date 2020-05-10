@@ -17,6 +17,10 @@ export default class MyDocument extends Document {
         styles: (
           <Html lang='pt-BR'>
             {initialProps.styles}
+            <meta
+              name='google-site-verification'
+              content='8aqqYd8Ki3-VPGC3kQnKzQ4CtMPLJFljOEx-8x3qc5U'
+            />
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
               href='https://fonts.googleapis.com/css?family=Indie+Flower|Inter:400,700&display=swap'
