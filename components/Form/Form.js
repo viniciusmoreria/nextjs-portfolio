@@ -49,24 +49,22 @@ export default function Form() {
       <LazyLoad height={200} offset={280}>
         <StyledForm>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor='nome'>
-              <input
-                type='text'
-                placeholder='Nome'
-                name='name'
-                ref={register({ required: true, maxLength: 80 })}
-              />
-            </label>
+            <input
+              type='text'
+              placeholder='Nome'
+              name='name'
+              label='nome'
+              ref={register({ required: true, maxLength: 80 })}
+            />
             <span>{errors.name && 'Por favor informar seu nome'}</span>
 
-            <label htmlFor='email'>
-              <input
-                type='email'
-                placeholder='Email'
-                name='email'
-                ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-              />
-            </label>
+            <input
+              type='email'
+              placeholder='Email'
+              name='email'
+              label='email'
+              ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+            />
             <span>{errors.email && 'Por favor informar seu email'}</span>
 
             <label>

@@ -27,7 +27,7 @@ const About = () => {
               rel='noopener noreferrer'
               href='https://viniciusmoreeira.now.sh/resume.pdf'
             >
-              Visualizar meu currículo.
+              Visualizar meu currículo
             </a>
           </p>
         </Fade>
