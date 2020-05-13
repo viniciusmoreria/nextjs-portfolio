@@ -5,9 +5,8 @@ import Image from './image';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 const images = [
-  'https://i.imgur.com/rAm5wCX.png',
-  'https://i.imgur.com/dVxHaQ9.jpg',
-  'https://i.imgur.com/wWUrFdE.png',
+  'https://mir-s3-cdn-cf.behance.net/project_modules/fs/0b45db96853759.5eb80d310d1c8.png',
+  'https://mir-s3-cdn-cf.behance.net/project_modules/fs/3c80b197047723.5ebc2696bec3a.png',
 ];
 
 const responsive = {

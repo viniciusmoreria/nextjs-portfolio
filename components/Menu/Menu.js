@@ -75,8 +75,8 @@ export const Menu = ({ open, setOpen }) => {
           </Link>
         </div>
         <img
-          src='https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
-          alt='Textura abstrata branca'
+          src='https://images.unsplash.com/photo-1531592937781-344ad608fabf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
+          alt='Sombra de uma pessoa acenando'
         />
       </StyledMenu>
     </>

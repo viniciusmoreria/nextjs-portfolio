@@ -53,7 +53,7 @@ export default function Form() {
               type='text'
               placeholder='Nome'
               name='name'
-              label='nome'
+              aria-label='nome'
               ref={register({ required: true, maxLength: 80 })}
             />
             <span>{errors.name && 'Por favor informar seu nome'}</span>
@@ -62,7 +62,7 @@ export default function Form() {
               type='email'
               placeholder='Email'
               name='email'
-              label='email'
+              aria-label='email'
               ref={register({ required: true, pattern: /^\S+@\S+$/i })}
             />
             <span>{errors.email && 'Por favor informar seu email'}</span>
