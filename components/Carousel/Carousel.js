@@ -9,6 +9,11 @@ const images = [
   'https://mir-s3-cdn-cf.behance.net/project_modules/fs/3c80b197047723.5ebc2696bec3a.png',
 ];
 
+const sites = [
+  'https://even-landing-page.now.sh/',
+  'https://viniciusmoreeira.github.io/tindog/',
+];
+
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -46,9 +51,13 @@ class CustomCarousel extends Component {
           containerClass='carousel'
           itemClass='carousel-item'
         >
-          {images.map((image) => {
-            return <Image key='key' url={image} alt={image} />;
-          })}
+          <a href={sites[0]} target='_blank' rel='noopener noreferrer'>
+            <Image url={images[0]} alt={images[0]}></Image>
+          </a>
+
+          <a href={sites[1]} target='_blank' rel='noopener noreferrer'>
+            <Image url={images[1]} alt={images[1]}></Image>
+          </a>
         </Carousel>
       </LazyLoad>
     );
